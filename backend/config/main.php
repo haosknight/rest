@@ -11,9 +11,18 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+        'gii' => [
+            'class' => 'yii\gii\Module',
+            'allowedIPs' => ['192.168.150.16'] // adjust this to your needs
+        ],
+        'v1' => [
+            'class' => 'app\modules\v1\apiV1Module',
+        ],
+    ],
     'components' => [
         'request' => [
+            'baseUrl' => '/api',
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
@@ -37,14 +46,15 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
+            //'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/task']],
+                //['/api/site/login' => '/api/login'],
             ],
         ],
-        */
     ],
     'params' => $params,
 ];

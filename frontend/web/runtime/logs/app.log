@@ -1,0 +1,597 @@
+2019-01-17 11:37:35 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-17 11:37:35 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:37:35 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:37:35 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'm9snptkf7hhk74mki7ife0p5g7'
+    '_csrf-frontend' => 'd3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=m9snptkf7hhk74mki7ife0p5g7; _csrf-frontend=d3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '25520'
+    'REDIRECT_URL' => '/frontend/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547725055.151
+    'REQUEST_TIME' => 1547725055
+]
+2019-01-17 11:37:35 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-17 11:37:35 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:37:35 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:37:35 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'm9snptkf7hhk74mki7ife0p5g7'
+    '_csrf-frontend' => 'd3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=m9snptkf7hhk74mki7ife0p5g7; _csrf-frontend=d3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '25521'
+    'REDIRECT_URL' => '/frontend/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547725055.496
+    'REQUEST_TIME' => 1547725055
+]
+2019-01-17 11:43:27 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-17 11:43:27 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:43:27 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:43:27 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'm9snptkf7hhk74mki7ife0p5g7'
+    '_csrf-frontend' => 'd3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=m9snptkf7hhk74mki7ife0p5g7; _csrf-frontend=d3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '10599'
+    'REDIRECT_URL' => '/frontend/web/api/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/site/index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547725407.049
+    'REQUEST_TIME' => 1547725407
+]
+2019-01-17 11:44:22 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-17 11:44:22 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:44:22 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:44:22 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'm9snptkf7hhk74mki7ife0p5g7'
+    '_csrf-frontend' => 'd3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=m9snptkf7hhk74mki7ife0p5g7; _csrf-frontend=d3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '10721'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547725462.939
+    'REQUEST_TIME' => 1547725462
+]
+2019-01-17 11:45:12 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-17 11:45:12 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:45:12 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:45:12 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'm9snptkf7hhk74mki7ife0p5g7'
+    '_csrf-frontend' => 'd3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=m9snptkf7hhk74mki7ife0p5g7; _csrf-frontend=d3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '10801'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547725512.576
+    'REQUEST_TIME' => 1547725512
+]
+2019-01-17 11:45:17 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-17 11:45:17 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:45:17 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:45:17 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'm9snptkf7hhk74mki7ife0p5g7'
+    '_csrf-frontend' => 'd3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=m9snptkf7hhk74mki7ife0p5g7; _csrf-frontend=d3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '10804'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547725517.714
+    'REQUEST_TIME' => 1547725517
+]
+2019-01-17 11:45:21 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-17 11:45:21 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:45:21 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:45:21 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'm9snptkf7hhk74mki7ife0p5g7'
+    '_csrf-frontend' => 'd3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=m9snptkf7hhk74mki7ife0p5g7; _csrf-frontend=d3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '10812'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547725521.196
+    'REQUEST_TIME' => 1547725521
+]
+2019-01-17 11:45:23 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-17 11:45:23 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:45:23 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-17 11:45:23 [192.168.150.16][-][m9snptkf7hhk74mki7ife0p5g7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'm9snptkf7hhk74mki7ife0p5g7'
+    '_csrf-frontend' => 'd3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=m9snptkf7hhk74mki7ife0p5g7; _csrf-frontend=d3809be28273772880ff22658d81a2fd22d108b1fdcb0eac40e09f8a04540157a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22dLQ-3iPIKu6IupfRC_ckgkLXczAeKHM7%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '10817'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547725523.441
+    'REQUEST_TIME' => 1547725523
+]
+2019-01-18 05:25:39 [192.168.150.16][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/rest/frontend/web/views/site/index.php' in /var/www/rest/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/rest/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/rest/f...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/rest/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 /var/www/rest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/rest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/rest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /var/www/rest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /var/www/rest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/rest/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-01-18 05:25:39 [192.168.150.16][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-18 05:25:39 [192.168.150.16][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.150.16
+2019-01-18 05:25:35 [192.168.150.16][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'rest.home'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.805 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at rest.home Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'rest.home'
+    'SERVER_ADDR' => '192.168.150.237'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.150.16'
+    'DOCUMENT_ROOT' => '/var/www/rest'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/rest'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/rest/frontend/web/index.php'
+    'REMOTE_PORT' => '23055'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1547789133.451
+    'REQUEST_TIME' => 1547789133
+]
