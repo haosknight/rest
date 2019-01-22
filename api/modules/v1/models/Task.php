@@ -36,7 +36,7 @@ class Task extends Model
     {
         if (!Yii::$app->cache->get('tasks')) {
             $tasks = [];
-            // Генерация списка задач - трудоемкая операция,
+            // Генерация списка задач - "трудоемкая операция",
             for($c=1;$c<=1000;$c++) {
                 $task = new Task;
                 $task->id = $c;
