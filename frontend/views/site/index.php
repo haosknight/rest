@@ -1,6 +1,10 @@
 <?php
 
-/* @var $this yii\web\View */
+/**
+ * HTML разметка для вывода элементов с помощью extJS
+ *
+ * @var $this yii\web\View
+ */
 
 $this->title = 'Тест веб-сервиса';
 $this->registerCssFile("js/ext-6.6.0/build/classic/theme-neptune/resources/theme-neptune-all.css");
@@ -9,18 +13,10 @@ $this->registerJsFile("js/ext-6.6.0/build/classic/theme-neptune/theme-neptune.js
 $this->registerJsFile("js/app.js");
 ?>
 <div class="site-index">
-
-    <div class="jumbotron">
-        <h1>Тестовый проект</h1>
-
-        <p class="lead">Фронтенд для веб-севиса</p>
-    </div>
-
     <div class="body-content">
-
         <div class="row">
             <div class="col-lg-2">
-                &nbsp;&nbsp;
+                &nbsp;
             </div>
             <div class="col-lg-8">
                 <div class="row">
@@ -28,7 +24,7 @@ $this->registerJsFile("js/app.js");
                         &nbsp;
                     </div>
                     <div class="col-lg-6">
-                        <div id="search"></div>
+                        <div id="search">&nbsp;</div>
                     </div>
                     <div class="col-lg-3">
                         &nbsp;
@@ -36,14 +32,13 @@ $this->registerJsFile("js/app.js");
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div id="grid"></div>
+                        <div id="grid">&nbsp;</div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2">
-                &nbsp;&nbsp;
+                &nbsp;
             </div>
         </div>
-
     </div>
 </div>

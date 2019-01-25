@@ -34,7 +34,7 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-api', 'httpOnly' => true],
+            'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -56,10 +56,11 @@ return [
             'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                'login' => 'site/login',
+                // Запрос информации о задаче вида Http://domain.com/api/v1/task/35
                 'v1/task/<id:\d+>' => 'v1/task/index',
+                // Запрос перечня задач вида Http://domain.com/api/v1/task
                 'v1/task' => 'v1/task/index',
-                'v1/task/search' => 'v1/task/search',
+                // Указываем контроллер restapi
                 ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/task']],
             ],
         ],

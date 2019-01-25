@@ -1,27 +1,9 @@
 <p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
+    <h1 align="center">Информация по тестовому заданию. Разработка веб-сервиса.</h1>
     <br>
 </p>
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
-
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
-
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
-
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
-
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
-
-DIRECTORY STRUCTURE
+Структура проекта
 -------------------
 
 ```
@@ -29,7 +11,8 @@ common
     config/              contains shared configurations
     mail/                contains view files for e-mails
     models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
+    tests/               contains tests for common classes  
+    widgets/
 console
     config/              contains console configurations
     controllers/         contains console controllers (commands)
@@ -49,7 +32,7 @@ frontend
     assets/              contains application assets such as JavaScript and CSS
     config/              contains frontend configurations
     controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
+    modules/
     runtime/             contains files generated during runtime
     tests/               contains tests for frontend application
     views/               contains view files for the Web application
@@ -58,18 +41,26 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
-# rest
-> git clone git@github.com:haosknight/rest.git rest
-> php init
-Which environment do you want the application to be initialized in?
+# Установка
+Затягиваем проект с github <br>
+Затем переходим в корень проекта (в данном случае папка rest) и инициализируем проект
+> git clone git@github.com:haosknight/rest.git rest <br>
+> php init <br>
+<div>Выбираем</div>
+<ul><li>[0] Development</li>
+<li>[1] Production</li></ul>
+<div>Вводим "yes"</div>
+<div>Затем запускаем обновление проекта копозитором по lock файлу, для того что бы создать папку vendor и затянуть в нее все модули присутствующие в проекте на момент последнего комита</div>
 
-  [0] Development
-  [1] Production
-
-  Your choice [0-1, or "q" to quit] 0
-
-  Initialize the application under 'Development' environment? [yes|no] yes
-  
 > composer update --lock
 
-Из папки backend переместить все в папку api, т.к. php init создает папку backend
+<div>Из папки backend переместить все в папку api, т.к. php init создает папку backend</div>
+
+# Коментарии к заданиям
+<h2>1 Задание</h2>
+
+<h2>2 Задание</h2>
+
+<h2>3 Задание</h2>
+
+<h2>4 Задание</h2>

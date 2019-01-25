@@ -1,10 +1,19 @@
 /**
- * Created by denis on 22.01.2019.
+ * Набор элементов пользовательского интерфейса
+ * Создан 22.01.2019.
  */
 
 Ext.application({
     name: 'Fiddle',
     launch: function () {
+        // Панель с заголовком
+        Ext.create('Ext.panel.Panel', {
+            title: 'Перечень задач. Работа с веб-сервисом',
+            margin: '0 0 0 0',
+            renderTo: 'panel'
+        });
+
+        // Форма поиска
         var searchForm = Ext.create('Ext.form.Panel', {
             renderTo: 'search',
             title: false,
@@ -34,13 +43,16 @@ Ext.application({
             ]
         });
 
+        // Устанавливаем цвет фона панели под цвет фона страницы
         searchForm.body.setStyle('background','#f5f5f5');
 
+        // Модель задач
         Ext.define('Task', {
             extend: 'Ext.data.Model',
             fields: ['id', 'title', 'date', 'author', 'status', 'description']
         });
 
+        // Хранилище задач
         var tasksStore = Ext.create('Ext.data.Store', {
             storeId: 'tasksStore',
             model: 'Task',
@@ -59,6 +71,7 @@ Ext.application({
             autoLoad: true
         });
 
+        // Таблица для вывода перечня задач
         var tasksGrid = Ext.create('Ext.grid.Panel', {
             title: 'Задачи',
             store: Ext.data.StoreManager.lookup('tasksStore'),
@@ -66,7 +79,6 @@ Ext.application({
             width: 750,
             left: '50%',
             renderTo: 'grid',
-            //pruneRemoved: false,
             columns: [
                 {
                     header: 'Номер задачи',
@@ -94,6 +106,7 @@ Ext.application({
                 },
                 {xtype:'actioncolumn',
                     width:40,
+                    // Кнопка с отправкой запроса на веб-сервис для вывода одной задачи в модальном окне
                     items:[{
                         getClass: function() {
                             return 'glyphicon glyphicon-eye-open';
@@ -105,9 +118,13 @@ Ext.application({
                                 success: function(response){
                                     var data=Ext.decode(response.responseText);
                                     if(data.success){
+                                        // При успешно выполненом запросе получаем данные задачи в JSON
                                         var record = data.tasks[0];
+                                        // Вызываем модальное окно
                                         var win = Ext.widget('taskwindow');
+                                        // Устанавливаем заголовок модального окна
                                         win.setTitle("Информация о задаче №"+id);
+                                        // Заполняем форму в модальном окне данными задачи
                                         win.down("form").getForm().setValues(record);
                                     }
                                     else{
@@ -119,6 +136,7 @@ Ext.application({
                     }]
                 }
             ],
+            // Панель пагинации
             dockedItems: [{
                 xtype: 'pagingtoolbar',
                 store: Ext.data.StoreManager.lookup('tasksStore'),
@@ -130,6 +148,7 @@ Ext.application({
             }]
         });
 
+        // Объявляем элемент модального окна с настройками
         Ext.define('Task', {
             extend: 'Ext.window.Window',
             alias: 'widget.taskwindow',
@@ -140,6 +159,7 @@ Ext.application({
             layout: 'fit',
             autoShow: true,
 
+            // Форма внутри модального окна для вывода информации о задаче
             initComponent: function() {
                 this.items = [{
                     xtype: 'form',

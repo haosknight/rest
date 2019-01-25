@@ -3,7 +3,7 @@
 namespace app\modules\v1;
 
 /**
- * v1 module definition class
+ * Класс модуля первой версии веб-сервиса
  */
 class apiV1Module extends \yii\base\Module
 {
