@@ -61,17 +61,29 @@ class Task extends Model
     /**
      * @return array
      */
-    public function getTasks() {
+    public function getTasks($start = 0, $limit = 0, $titleSearch = null) {
         $allTasks = $this->getAllTasks();
         $tasks = [];
+        if ($limit === 0) $limit = count($allTasks);
+
+        $count = 0;
         foreach ($allTasks as $task) {
-            array_push($tasks, [
-                'id' => $task->id,
-                'title' => $task->title,
-                'date' => $task->date,
-            ]);
+            if (empty($titleSearch) || mb_stripos($task->title, $titleSearch) !== false) {
+                $count++;
+                if ($count>$start) {
+                    if ($count<=$limit+$start) {
+                        array_push($tasks, [
+                            'id' => $task->id,
+                            'title' => $task->title,
+                            'date' => $task->date,
+                        ]);
+                    }
+                }
+            }
         }
-        return $tasks;
+
+        $count = empty($count) ? count($allTasks) : $count;
+        return ["success" => true, "totalCount" => $count, "tasks" => $tasks];
     }
 
     /**
@@ -84,7 +96,7 @@ class Task extends Model
         //$task = $allTasks[$id-1]; //Можно было сделать так, но я решил делать через идентификатор
         $task = [];
         foreach ($allTasks as $t) {
-            if ($t['id'] = $id) {
+            if ($t['id'] == $id) {
                 $task = $t;
             }
         }
@@ -92,6 +104,22 @@ class Task extends Model
             Yii::$app->session->setFlash('danger', 'Идентификатор задачи находиться вне диапазона');
             return false;
         }
-        return $task;
+        return ["success" => true, "totalCount" => count($allTasks), "tasks" => [$task]];
+    }
+
+    public function search($searchTitle) {
+        $allTasks = $this->getAllTasks();
+        $foundTasks = [];
+        foreach ($allTasks as $t) {
+            if (strpos($t['title'], $searchTitle)) {
+                array_push($foundTasks, [
+                    'id' => $t['id'],
+                    'title' => $t['title'],
+                    'date' => $t['date'],
+                ]);
+            }
+        }
+
+        return ["success" => true, "totalCount" => count($allTasks), "tasks" => [$foundTasks]];
     }
 }

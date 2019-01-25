@@ -59,3 +59,17 @@ vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
 # rest
+> git clone git@github.com:haosknight/rest.git rest
+> php init
+Which environment do you want the application to be initialized in?
+
+  [0] Development
+  [1] Production
+
+  Your choice [0-1, or "q" to quit] 0
+
+  Initialize the application under 'Development' environment? [yes|no] yes
+  
+> composer update --lock
+
+Из папки backend переместить все в папку api, т.к. php init создает папку backend

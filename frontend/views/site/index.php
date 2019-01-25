@@ -19,8 +19,29 @@ $this->registerJsFile("js/app.js");
     <div class="body-content">
 
         <div class="row">
-            <div class="col-lg-12">
-                <div id="grid"></div>
+            <div class="col-lg-2">
+                &nbsp;&nbsp;
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-3">
+                        &nbsp;
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="search"></div>
+                    </div>
+                    <div class="col-lg-3">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="grid"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                &nbsp;&nbsp;
             </div>
         </div>
 

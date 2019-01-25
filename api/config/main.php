@@ -59,6 +59,7 @@ return [
                 'login' => 'site/login',
                 'v1/task/<id:\d+>' => 'v1/task/index',
                 'v1/task' => 'v1/task/index',
+                'v1/task/search' => 'v1/task/search',
                 ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/task']],
             ],
         ],
