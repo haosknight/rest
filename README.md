@@ -8,38 +8,39 @@
 
 ```
 common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes  
-    widgets/
+    config/              Общая конфигурация проекта
+    mail/                Содержит представления для отправки почты (не используется)
+    models/              Общие модели для бэка и фронта  (не используется, пустая)
+    tests/               Общие тесты (не используются)
+    widgets/             Общие виджеты
 console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
+    config/              Конфигурация консольного приложения
+    controllers/         Контроллеры консольного приложения  (не используются)
+    migrations/          Миграции (не используются)
+    models/              Модели консольного приложения (не используются)
+    runtime/             Папка для генерируемых файлов консольного приложения (не используются)
+api (переименованный backend)
+    assets/              Подключение ресурсов api приложения, таких как JavaScript и CSS (не использовал)
+    config/              Конфигурация api приложения
+    controllers/         Контроллеры api приложения (не используются так как основной контроллер веб-сервиса в модуле)
+    models/              Модели api приложения (не используются так как основная модель веб-сервиса в модуле)
+    modules/             Содержит модуль v1, в котором проихводиться обработка запросов к web-сервису
+    runtime/             Папка для генерируемых файлов api приложения (в ней храниться файловый кэш)
+    tests/               Тесты api приложения (не используются)
+    views/               Представления api приложения (не используются)
+    web/                 Cодержит входной файл api приложения index.php и веб-ресурсы
 frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    modules/
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
+    assets/              Подключение ресурсов фронт приложения, таких как JavaScript и CSS
+    config/              Конфигурация фронт приложения
+    controllers/         Контроллеры фронт приложения
+    runtime/             Папка для генерируемых файлов фронт приложения
+    tests/               Тесты фронт приложения (не используются)
+    views/               Представления фронт приложения (шаблон и фвйл с HTML-разметкой под элементы ExtJs)
+    web/                 Cодержит входной файл фронт приложения index.php и веб-ресурсы (картинки и js-файлы)
+    widgets/             Виджеты фронт приложения (не используется)
+vendor/                  Содержит ядро приложения yii2 и зависимые пакеты сторонних производителей
+environments/            Содержит переопределения на основе среды (не используется)
+.htaccess                Прописаны правила для обработки запросов к веб-серверу (при обращении http://domain.ru/ - перенаправляет на фронт - frontend/web, а при обращении http://domain.ru/api - перенаправляет на api - api/web)
 ```
 # Установка
 Затягиваем проект с github <br>
@@ -99,7 +100,7 @@ environments/            contains environment-based overrides
 <div>Данные возвращаются в JSON формате</div>
 
 <h2>3 Задание</h2>
-<div>Для фронта используется ExtJs. Перечень задач выводиться элементом 
+<div>Для фронта используется ExtJs. Весь JS код содержиться в файле frontend/web/js/app.js. Перечень задач выводиться элементом 
 <code>Ext.grid.Panel</code>. Grid использует хранилище <code>Ext.data.Store</code>,
 которое самостоятельно обращается к веб-сервису
 по указанному url (через компонент proxy) и обновляет данные на основе
