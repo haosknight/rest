@@ -29,15 +29,8 @@ Ext.application({
                     emptyText: 'Поиск задачи по заголовку (без учета регистра)',
                     width: 350,
                     onChange: function (value,lastValue) {
-                        this.up("form").submit({
-                            url:'/api/v1/task',
-                            success: function(form, response) {
-                                if (response.result.success === true) {
-                                    tasksStore.proxy.setExtraParams({title:searchForm.getForm().getFields().items[0].value});
-                                    tasksStore.loadPage(1);
-                                }
-                            }
-                        })
+                        tasksStore.proxy.setExtraParams({title:searchForm.getForm().getFields().items[0].value});
+                        tasksStore.loadPage(1);
                     }
                 }
             ]
