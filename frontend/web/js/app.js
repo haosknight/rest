@@ -106,25 +106,40 @@ Ext.application({
                         },
                         handler:function (grid, rowIndex, colIndex) {
                             var id = grid.getStore().getAt(rowIndex).data['id'];
-                            Ext.Ajax.request({
-                                url: '/api/v1/task/'+id,
-                                success: function(response){
-                                    var data=Ext.decode(response.responseText);
-                                    if(data.success){
-                                        // При успешно выполненом запросе получаем данные задачи в JSON
-                                        var record = data.tasks[0];
-                                        // Вызываем модальное окно
-                                        var win = Ext.widget('taskwindow');
-                                        // Устанавливаем заголовок модального окна
-                                        win.setTitle("Информация о задаче №"+id);
-                                        // Заполняем форму в модальном окне данными задачи
-                                        win.down("form").getForm().setValues(record);
+                            var savedTask = Ext.util.Cookies.get("task"+id);
+                            if (savedTask === null) {
+                                //При отсутствии записи в cookie формируем запрос к веб-сервису
+                                Ext.Ajax.request({
+                                    url: '/api/v1/task/'+id,
+                                    success: function(response){
+                                        var data=Ext.decode(response.responseText);
+                                        if(data.success){
+                                            // При успешно выполненом запросе получаем данные задачи в JSON
+                                            var record = data.tasks[0];
+                                            // Вызываем модальное окно
+                                            var win = Ext.widget('taskwindow');
+                                            // Устанавливаем заголовок модального окна
+                                            win.setTitle("Информация о задаче №"+id);
+                                            // Заполняем форму в модальном окне данными задачи
+                                            win.down("form").getForm().setValues(record);
+                                            // Сохраняем в cookie полученные данные о задаче на 59 минут
+                                            var now = new Date();
+                                            var expiry = new Date(now.getTime() + 59 * 60 * 1000);
+                                            Ext.util.Cookies.set("task"+id, JSON.stringify(record), expiry);
+                                        }
+                                        else{
+                                            Ext.Msg.alert('Ошибка','Задача не найдена');
+                                        }
                                     }
-                                    else{
-                                        Ext.Msg.alert('Ошибка','Задача не найдена');
-                                    }
-                                }
-                            });
+                                });
+                            } else {
+                                // При наличии в cookies нужной записи вызываем модальное окно
+                                var win = Ext.widget('taskwindow');
+                                // Устанавливаем заголовок модального окна
+                                win.setTitle("Информация о задаче №"+id);
+                                // Заполняем форму в модальном окне данными задачи
+                                win.down("form").getForm().setValues(JSON.parse(savedTask));
+                            }
                         }
                     }]
                 }
